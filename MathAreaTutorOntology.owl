@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/techassignment02/ontologies/2025/11/MathAreaTutorOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/techassignment02/ontologies/2025/11/MathAreaTutorOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/techassignment02/ontologies/2025/11/MathAreaTutorOntology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Square"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triangle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFormula"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBase"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRadius"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSide"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Base"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CircleAreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Height"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Length"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Radius"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RectangleAreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Side"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SquareAreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TriangleAreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Width"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#circle1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rect1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#square1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tri1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Circle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rectangle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Square"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triangle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Circle"/>
+        <Class IRI="#Rectangle"/>
+        <Class IRI="#Square"/>
+        <Class IRI="#Triangle"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Measurement"/>
+        <NamedIndividual IRI="#Base"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Formula"/>
+        <NamedIndividual IRI="#CircleAreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Measurement"/>
+        <NamedIndividual IRI="#Height"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Measurement"/>
+        <NamedIndividual IRI="#Length"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Measurement"/>
+        <NamedIndividual IRI="#Radius"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Formula"/>
+        <NamedIndividual IRI="#RectangleAreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Measurement"/>
+        <NamedIndividual IRI="#Side"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Formula"/>
+        <NamedIndividual IRI="#SquareAreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Formula"/>
+        <NamedIndividual IRI="#TriangleAreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Measurement"/>
+        <NamedIndividual IRI="#Width"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shape"/>
+        <NamedIndividual IRI="#circle1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shape"/>
+        <NamedIndividual IRI="#rect1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shape"/>
+        <NamedIndividual IRI="#square1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shape"/>
+        <NamedIndividual IRI="#tri1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresMeasurement"/>
+        <NamedIndividual IRI="#CircleAreaFormula"/>
+        <NamedIndividual IRI="#Radius"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresMeasurement"/>
+        <NamedIndividual IRI="#RectangleAreaFormula"/>
+        <NamedIndividual IRI="#Length"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresMeasurement"/>
+        <NamedIndividual IRI="#RectangleAreaFormula"/>
+        <NamedIndividual IRI="#Width"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresMeasurement"/>
+        <NamedIndividual IRI="#SquareAreaFormula"/>
+        <NamedIndividual IRI="#Side"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresMeasurement"/>
+        <NamedIndividual IRI="#TriangleAreaFormula"/>
+        <NamedIndividual IRI="#Base"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresMeasurement"/>
+        <NamedIndividual IRI="#TriangleAreaFormula"/>
+        <NamedIndividual IRI="#Height"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#circle1"/>
+        <NamedIndividual IRI="#CircleAreaFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#rect1"/>
+        <NamedIndividual IRI="#RectangleAreaFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#square1"/>
+        <NamedIndividual IRI="#SquareAreaFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#tri1"/>
+        <NamedIndividual IRI="#TriangleAreaFormula"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFormula"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresMeasurement"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormula"/>
+        <Class IRI="#Shape"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresMeasurement"/>
+        <Class IRI="#Formula"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFormula"/>
+        <Class IRI="#Formula"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresMeasurement"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBase"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasHeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLength"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasRadius"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSide"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWidth"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBase"/>
+        <Class IRI="#Triangle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHeight"/>
+        <Class IRI="#Shape"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLength"/>
+        <Class IRI="#Rectangle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRadius"/>
+        <Class IRI="#Circle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSide"/>
+        <Class IRI="#Square"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWidth"/>
+        <Class IRI="#Rectangle"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBase"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRadius"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSide"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CircleAreaFormula</IRI>
+        <Literal>Area = π × radius</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RectangleAreaFormula</IRI>
+        <Literal>Area = length × width</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SquareAreaFormula</IRI>
+        <Literal>Area = side × side</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TriangleAreaFormula</IRI>
+        <Literal>Area = 1/2 × base × height</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
